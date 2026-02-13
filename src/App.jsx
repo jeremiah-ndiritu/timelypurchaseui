@@ -1,7 +1,16 @@
+import {Routes, Route} from "react-router-dom"
+import Products from "./pages/products/Products.jsx"
+import Home from "./pages/Home.jsx"
+import { Toaster } from "react-hot-toast"
+
 export default function App() {
   return( 
-    <main>
-      <h1>Timely Purchase</h1>
+    <main className="bg-gray-50">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+      </Routes>  
+      <Toaster />
     </main>
   )
 }
