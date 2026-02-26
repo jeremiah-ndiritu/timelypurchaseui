@@ -1,6 +1,10 @@
 import {Routes, Route} from "react-router-dom"
 import Products from "./pages/products/Products.jsx"
 import Home from "./pages/Home.jsx"
+import AboutUs from "./pages/About.jsx"
+import ContactUs from "./pages/Contact.jsx"
+
+
 import { Toaster } from "react-hot-toast"
 
 export default function App() {
