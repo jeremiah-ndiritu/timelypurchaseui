@@ -1,8 +1,10 @@
 import {Routes, Route} from "react-router-dom"
 import Products from "./pages/products/Products.jsx"
 import Home from "./pages/Home.jsx"
-import AboutUs from "./pages/About.jsx"
-import ContactUs from "./pages/Contact.jsx"
+import About from "./pages/About.jsx"
+import Contact from "./pages/Contact.jsx"
+
+
 
 
 import { Toaster } from "react-hot-toast"
@@ -26,6 +28,8 @@ export default function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/signup" element={<SignUp/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>  
       <Toaster />
     </main>
